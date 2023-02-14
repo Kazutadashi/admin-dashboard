@@ -18,6 +18,11 @@ body {
     grid-area: sidebar;
 }
 
+.sidebar .menu {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 .header {
     background-color: white;
     grid-area: header;
