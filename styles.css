@@ -14,13 +14,29 @@ body {
 }
 
 .sidebar {
-    background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(51, 132, 172);
     grid-area: sidebar;
 }
 
-.sidebar .menu {
+.sidebar * {
+    color: white;
+}
+
+.sidebar .menu,
+.sidebar .settings,
+.sidebar .dash-title {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.sidebar img,
+.sidebar a {
+    align-self: center;
 }
 
 .header {
