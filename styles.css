@@ -26,20 +26,30 @@ body {
     justify-items: left;
     
     background-color: rgb(51, 132, 172);
+    width: 15vw;
 
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
     color: white;
 
     padding: 15px 0px 0px 15px;
 }
 
-/* Hacky way to add a gap to the 7th row*/
+/* Hacky way to add a gap to the 1st and 7th row*/
 .sidebar > a:nth-of-type(6),
 .sidebar > img:nth-of-type(7){
     padding-bottom: 50px;
 }
-.sidebar h1 {
-    margin: 0px
+
+.sidebar > h3,
+.sidebar > img:nth-of-type(1){
+    padding-bottom: 30px;
+}
+/* end hacky nonsense */
+
+.sidebar h3 {
+    margin: 0px;
+    font-size: 30px;
 }
 .sidebar img {
     justify-self: center;
@@ -50,10 +60,54 @@ body {
     font-weight: 600;
 }
 
+
+
+
+
 .header {
     background-color: white;
     grid-area: header;
 }
+
+.top-nav {
+    display: flex;
+    align-items: center;
+
+    padding-top: 15px;
+}
+
+.top-nav form {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.top-nav input[type='image'] {
+    padding: 0px 15px 0px 40px;
+    height: 28px;
+}
+
+.top-nav input[type='search'] {
+    border-radius: 30px;
+    border-style: none;
+
+    background-color: rgba(128, 128, 128, .2);
+
+    padding: 15px;
+    height: 35px;
+    flex: 1;
+}
+
+.top-nav input[type='search']:focus {
+    border-style: none;
+    outline: none;
+}
+
+.top-nav .profile {
+    display: flex;
+    justify-content: right;
+}
+
 
 .content {
     background-color: gray;
