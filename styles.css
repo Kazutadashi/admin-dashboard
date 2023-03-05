@@ -33,7 +33,7 @@ body {
     justify-items: left;
     
     background-color: var(--secondary-color);
-    width: 14vw;
+    width: max(300px, 15vw);
 
     color: white;
 
@@ -135,7 +135,7 @@ body {
     justify-content: space-between;
 
     font-weight: bolder;
-    margin: 20px 80px 5px 50px;
+    margin: 20px 80px 30px 50px;
 }
 
 .bottom-nav .options {
@@ -180,6 +180,25 @@ body {
 }
 
 .content {
-    background-color: gray;
+    background-color: rgb(211, 225, 228);
     grid-area: main-content;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+    margin-left: 20px;
+}
+
+.card {
+    background-color: white;
+    border-left: 7px solid orange;
+    border-radius: 7px;
+    padding-left: 20px;
 }
