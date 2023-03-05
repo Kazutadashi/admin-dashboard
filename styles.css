@@ -123,6 +123,44 @@ body {
     width: 50px;
 }
 
+.bottom-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-weight: bolder;
+    margin: 20px 100px 5px 50px;
+}
+
+.bottom-nav .options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40px;
+    gap: 40px;
+}
+
+.bottom-nav .profile-main {
+    display: flex;
+    align-items: center;
+}
+
+.bottom-nav p:first-child {
+    font-size: 14px;
+}
+
+.bottom-nav p {
+    margin: 0;
+    font-size: 25px;
+}
+
+.bottom-nav .user-icon {
+    border-radius: 200px;
+    height: 70px;
+    width: 70px;
+}
+
+
+
 .content {
     background-color: gray;
     grid-area: main-content;
