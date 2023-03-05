@@ -1,3 +1,7 @@
+:root {
+    --secondary-color: rgb(51, 132, 172);
+}
+
 body {
     display: grid;
 
@@ -28,7 +32,7 @@ body {
     align-items: center;
     justify-items: left;
     
-    background-color: rgb(51, 132, 172);
+    background-color: var(--secondary-color);
     width: 14vw;
 
     color: white;
@@ -68,6 +72,8 @@ body {
 .header {
     background-color: white;
     grid-area: header;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .2);
+    position: relative;
 }
 
 .top-nav {
@@ -81,7 +87,7 @@ body {
     display: flex;
     align-items: center;
     flex: 1;
-    padding-right: 300px;
+    margin-right: 15vw;
 }
 
 .top-nav input[type='image'] {
@@ -129,14 +135,14 @@ body {
     justify-content: space-between;
 
     font-weight: bolder;
-    margin: 20px 100px 5px 50px;
+    margin: 20px 80px 5px 50px;
 }
 
 .bottom-nav .options {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 40px;
-    gap: 40px;
+    grid-template-rows: 45px;
+    gap: 30px;
 }
 
 .bottom-nav .profile-main {
@@ -153,13 +159,25 @@ body {
     font-size: 25px;
 }
 
+.bottom-nav button {
+    border-radius: 30px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: bolder;
+    font-size: 17px;
+    border-style: none;
+    width: 110px;
+}
+
 .bottom-nav .user-icon {
     border-radius: 200px;
     height: 70px;
     width: 70px;
 }
 
-
+.bottom-nav .greeting p {
+    margin-left: 23px;
+}
 
 .content {
     background-color: gray;
