@@ -188,17 +188,44 @@ body {
     grid-template-rows: 1fr 1fr;
 }
 
+.projects {
+    margin-left: 20px;
+}
+
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 25px;
-    margin-left: 20px;
 }
 
 .card {
     background-color: white;
-    border-left: 7px solid orange;
+    border-left: 9px solid orange;
     border-radius: 7px;
     padding-left: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+}
+
+.card p {
+    padding: 0px 20px 30px 0px;
+    margin: 0;
+    font-size: 15px;
+    color: rgb(112, 112, 112);
+    width: 25vw;
+}
+
+.card h3 {
+    padding: 30px 0px 0px 0px;
+    margin: 0;
+}
+
+.card-tools {
+    display: flex;
+    justify-content: right;
+}
+
+.card-tools img {
+    margin-right: 23px;
+    margin-bottom: 23px;
 }
