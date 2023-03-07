@@ -192,6 +192,7 @@ body {
 
 .projects {
     margin-left: 20px;
+    grid-row: 1 / 3;
 }
 
 .projects > h3 {
@@ -203,6 +204,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 25px;
+    height: 87%;
 }
 
 .card {
