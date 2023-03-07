@@ -67,10 +67,6 @@ body {
     font-weight: 600;
 }
 
-
-
-
-
 .header {
     background-color: white;
     grid-area: header;
@@ -196,7 +192,7 @@ body {
 }
 
 .projects > h3 {
- margin: 30px 0px 10px 0px;
+ margin: 30px 0px 20px 0px;
 }
 
 .cards {
@@ -243,6 +239,10 @@ body {
     
 }
 
+.announcements h3 {
+    margin: 30px 0px 20px 0px;
+}
+
 .a-card {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -271,14 +271,22 @@ body {
     border-bottom: 1px solid gray;
     padding-bottom: 20px;
     color: gray;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .a-card h3 {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .a-card h3,
 .a-card p {
     margin: 0px;
+}
+
+.trending {
+    margin: 0px 30px;
+}
+
+.trending h3 {
+    margin: 30px 0px 20px 0px;
 }
