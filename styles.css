@@ -1,6 +1,8 @@
 :root {
     --secondary-color: rgb(51, 132, 172);
-}
+    --card-radius: 7px;
+    --card-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+}   
 
 body {
     display: grid;
@@ -72,7 +74,7 @@ body {
 .header {
     background-color: white;
     grid-area: header;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, .2);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, .2);
     position: relative;
 }
 
@@ -192,6 +194,10 @@ body {
     margin-left: 20px;
 }
 
+.projects > h3 {
+ margin: 30px 0px 10px 0px;
+}
+
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -202,9 +208,9 @@ body {
 .card {
     background-color: white;
     border-left: 9px solid orange;
-    border-radius: 7px;
+    border-radius: var(--card-radius);
     padding-left: 20px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+    box-shadow: var(--card-shadow);
 }
 
 .card p {
@@ -228,4 +234,49 @@ body {
 .card-tools img {
     margin-right: 23px;
     margin-bottom: 23px;
+}
+
+.announcements {
+    margin: 0px 30px;
+    
+}
+
+.a-card {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: white;
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
+}
+
+.a-card div {
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.a-card div:first-child h3 {
+    padding-top: 30px;
+}
+
+.a-card div:last-child p {
+    border-bottom: none;
+    padding-bottom: 30px
+}
+
+.a-card p {
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+    color: gray;
+    font-size: 12px;
+}
+
+.a-card h3 {
+    font-size: 14px;
+}
+
+.a-card h3,
+.a-card p {
+    margin: 0px;
 }
