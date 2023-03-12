@@ -183,7 +183,7 @@ body {
 
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    
 }
 
 .projects {
@@ -192,7 +192,7 @@ body {
 }
 
 .projects > h3 {
- margin: 30px 0px 20px 0px;
+ margin: 30px 0px 10px 0px;
 }
 
 .cards {
@@ -200,7 +200,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 25px;
-    height: 87%;
+    height: 88%;
 }
 
 .card {
@@ -235,12 +235,11 @@ body {
 }
 
 .announcements {
-    margin: 0px 30px;
-    
+    margin: 0px 30px; 
 }
 
 .announcements h3 {
-    margin: 30px 0px 20px 0px;
+    margin: 30px 0px 10px 0px;
 }
 
 .a-card {
@@ -249,6 +248,7 @@ body {
     background-color: white;
     border-radius: var(--card-radius);
     box-shadow: var(--card-shadow);
+    height: 84%;
 }
 
 .a-card div {
@@ -269,7 +269,7 @@ body {
 
 .a-card p {
     border-bottom: 1px solid gray;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     color: gray;
     font-size: 13px;
 }
@@ -284,9 +284,41 @@ body {
 }
 
 .trending {
-    margin: 0px 30px;
+    margin: 30px 30px;
 }
 
 .trending h3 {
-    margin: 30px 0px 20px 0px;
+    margin: 0px 0px 10px 0px;
+}
+
+.account-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    justify-content: left;
+    background-color: white;
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
+    row-gap: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    height: 32vh;
+}
+
+.account-grid img {
+    border-radius: 200px;
+    height: 60px;
+    width: 60px;
+}
+
+.account-grid div {
+    margin: 0px 20px;
+}
+
+.account-grid p,
+.account-grid h5 {
+    margin: 0;
+    padding: 0;
 }
